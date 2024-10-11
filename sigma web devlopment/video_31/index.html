@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+        body {
+            background-color: aqua;
+            display: flex;
+        }
+
+        .box {
+            width: 44px;
+            height: 44px;
+            background-color: rgb(160, 123, 195);
+            padding: 23PX;
+            margin: 32PX;
+            border: 2PX solid black;
+
+        }
+        @media only screen  and (orientation:portrait) {
+            body{
+                border: 2px solid black;
+            }
+                
+            }
+
+
+        @media only screen and (max-width:145px) {
+            body {
+                background-color: beige;
+                
+            }
+            .boxes{
+                font-direction: column;
+
+            }
+          
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div> i am muskan raja bundela</div>
+    <div class="boxes">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slectors_inline css</title>
+    <style>
+        /* element selector */
+        div {
+            background-color: burlywood;
+        }
+
+        /* class selector */
+        .red {
+            background-color: red;
+        }
+
+        /* id selector */
+        #green {
+            background-color: aqua;
+        }
+
+        /* child selector */
+        div>p {
+            color: brown;
+            background-color: yellow;
+        }
+
+        /* descendent selector */
+        div p {
+            color: red;
+            background-color: green;
+        }
+
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+    
+        }
+        /* pseudo selector */
+        a:visited{
+            color:yellow
+        }
+        a:link{
+            color:cadetblue
+        }
+        a:active{
+            color:greenyellow
+        }
+        a:hover{
+            background-color: chocolate;
+        }
+    
+
+
+    </style>
+</head>
+
+<body>
+    <DIV class="red">
+        <p> i am para</p>
+        i am div
+    </DIV>
+    <div>
+        i am also div
+    </div>
+    <div id="green">
+        i am also div
+    </div>
+    <!-- descendent selector -->
+    <div>
+        <article>
+            <p> i am para inside article and div </p>
+        </article>
+    </div>
+    <div>
+        <a href="https://www.google.com"> OPEN GOOGLE</a>
+        <a href="https://www.facebook.com"> OPEN FACEBOOK</a>
+        
+    </div class="one">
+    i am selector
+    <div >
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+    <style>
+        :root{
+            --color:pink;
+            --seccolor:lavender;
+            --defpad:23px;
+            --defop:0.6;
+            
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            background-color:var(--color);
+        }
+        ul{
+            display: flex;
+            padding: 14px;
+
+        }
+        ul li{
+            opacity: var(--defop);
+            list-style: none;
+            padding: var(--defpad);
+            border: 2px solid var(--seccolor);
+        }
+        ul li:first-child{
+            --color:rgb(138, 73, 84); 
+            background-color:var(--color);
+          
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>muskan</li>
+            <li>raja</li>
+            <li>bundela</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum voluptate veniam fugiat blanditiis dolore voluptates eaque porro, qui illo iure molestias, reiciendis neque doloremque temporibus nisi sit possimus, sapiente placeat earum ea cupiditate.</p>
+    </div>
+</body>
+</html>

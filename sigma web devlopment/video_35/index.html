@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> more on css selector</title>
+    <style>
+        body{
+            border: 2px solid brown;
+        }
+        /* *{
+             border: 2px solid black;
+            margin: 12px;
+            padding: 12px;
+        }
+        .box:first-child{
+            background-color: rgb(218, 97, 97);
+        }
+         .box::first-line{
+            color: rgb(200, 233, 101); 
+            border: 2px solid black; 
+        }
+        .boxes{
+            border: 2px solid black;
+        }
+        [data-color="particular"]{
+            margin-top: 45px;
+            color: blue;
+        } */
+         .box:nth-child(odd){
+            background-color: rgb(133, 174, 209);
+            text-align: center;
+            text-decoration: underline;
+            text-transform: capitalize;
+         }
+         .box:nth-last-child(1){
+            background-color: aquamarine;
+            text-shadow: 3px 3px 5px rgb(155, 91, 102);
+         }
+         h1{
+            text-align: center;
+            text-shadow: 1px 2px 2px red;
+            text-decoration: underline;
+         }
+         .boxes::before{
+            content: "hey its me muskan" ;
+            color: purple;
+            text-transform: uppercase;
+            font: 300;
+         }
+         .boxes::after{
+            content:" hey! web devlopment";
+            color: chocolate;
+         }
+         ::selection{
+            color:rgb(29, 207, 100);
+            background-color: rgb(80, 90, 33);
+         }
+         input::placeholder{
+            color: antiquewhite;
+            background-color: blueviolet;
+         }
+    </style>
+</head>
+
+<body>
+    <h1> Hey i am learning css</h1>
+    <div class="boxes">
+       
+        <div class="box"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quas excepturi necessitatibus ipsa provident, magnam dicta voluptatem commodi magni soluta eos nihil in omnis vero voluptate officia debitis sint facere?</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, voluptate non animi adipisci, numquam debitis, magni libero ab ducimus aperiam culpa. Earum fuga cum voluptatum, nobis blanditiis similique pariatur? Animi obcaecati libero, nobis consequuntur labore, similique odio hic sapiente atque est qui et saepe quam reprehenderit inventore sit omnis veritatis voluptatibus tempora rerum. Architecto, nobis neque et in quam reprehenderit adipisci eaque corporis. Hic inventore fuga dolore dicta, voluptate, atque totam esse dignissimos repudiandae officia ut et nostrum nemo rem ipsam excepturi reiciendis? Error sapiente sint eius magni vel ipsum nisi beatae id neque velit omnis necessitatibus cumque ullam iusto ducimus, excepturi ipsam dolore nobis exercitationem in consequatur facilis assumenda corporis. Voluptatibus suscipit impedit possimus voluptates voluptate adipisci eligendi veritatis dicta tempora pariatur maiores repellat nihil, culpa incidunt obcaecati doloribus illum modi molestias! Eligendi, deserunt totam. Nulla neque porro commodi laboriosam sint fugiat tempora, atque vel nemo ipsum? Corporis mollitia quos sapiente natus nisi vel autem, quas nostrum sint facere veniam esse aliquam beatae? Sed facilis dolore deserunt rerum tempora! Veritatis nulla corporis iure sed, fugiat exercitationem aliquid consequatur, aperiam atque ratione dolorum odio sint quo dignissimos ad quia possimus. At ab animi quo dolor nesciunt velit, exercitationem voluptate. Magnam maxime fugit sapiente quam corporis! Labore doloribus maxime voluptas! Non omnis corrupti sed officia quaerat cumque, quisquam reprehenderit et repellendus facere.</div>
+        <div class="box" data-color="particular">heyyy hiii hello
+
+        </div>
+        <div>
+            <label for="name"> Enter your name-</label>
+            <input type="text" name="name"
+            placeholder="Enter your name:">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+</head>
+<style>
+    body{
+        background-color:rgb(239, 202, 208);
+    }
+    .container {
+        background-color: beige;
+
+        border: 2px solid blueviolet;
+        height: auto;
+        display: grid;
+        /* grid-template-columns: [pehla]120px [doosra]100px  [teesra]120px;
+        grid-template-rows: 100px 100px 100px; */
+        grid-template-areas: "nav nav nav"
+                             "side article block"
+                             "footer footer footer";
+
+    }
+
+    .item {
+        margin: 22px;
+        border: 2px solid black;
+        /* width: 44px; */
+        height: 44px;
+        /* margin: 22px; */
+    }
+
+    .item1 {
+        background-color: aqua;
+        /* grid-row: pehla/doosra;
+        grid-column: pehla/doosra;
+        text-align: center; */
+        grid-area: nav;
+
+    }
+
+    .item2 {
+        /* grid-row: pehla/doosra;
+        grid-column: pehla/doosra; */
+        grid-area: side;
+        background-color: brown;
+    }
+
+    .item3 {
+
+        grid-area: article;
+        background-color: rgb(103, 202, 109);
+    }
+
+    .item4 {
+
+        grid-area: block;
+        background-color: rgb(97, 167, 101);
+    }
+
+    .item5 {
+
+        grid-area: footer;
+        background-color: rgb(103, 192, 202);
+    }
+
+    .item6{
+
+
+        background-color: rgb(174, 109, 186);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+</body>
+
+</html>

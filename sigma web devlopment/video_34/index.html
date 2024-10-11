@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear</title>
+    <style>
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        img {
+            float: left;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        .card:nth-child(4) {
+            background-color: aqua;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <h1> hey i am float </h1>
+        <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEyL3Jhd3BpeGVsb2ZmaWNlMV9iZWF1dGlmdWxfYV9oZWFydF9tYWRlX29mX2dsYXNzX29uX2FfYmVhY2hfd2FsbF8zZDgyM2M5NC02Y2IyLTRjMmEtYTgxZS1iZTY1MTE1MzE3MmEuanBn.jpg"
+            alt="" width="220px" height="200px">
+
+        <div class="card">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque molestiae officia repellendus
+            ipsam atque error omnis aliquid repellat amet maiores, sint vitae reiciendis esse aliquam porro ut fugiat
+            earum consectetur dolorum. Tenetur, perferendis deserunt neque, doloremque veritatis sapiente non culpa
+            illum at, necessitatibus nisi consequatur?</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis cupiditate aspernatur, accusamus amet corrupti quibusdam labore quaerat sit vel! Excepturi deserunt veritatis, iusto, recusandae corporis perferendis repellendus modi ullam asperiores consequatur, repellat reiciendis.</div>
+    </div>
+</body>
+
+</html>

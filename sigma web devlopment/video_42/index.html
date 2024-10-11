@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transform</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: beige;
+            /* transform: rotate(40deg); */
+            transform: scaleX(1.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box1{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: beige;
+            /* transform: rotate(0.5turn); */
+            transform: skewY(45deg);
+            transition: transform 0.5s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box2{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            background-color: beige;
+            /* transform: rotateZ(45deg); */
+            transform: translateY(100%) skew(15deg) translateX(45%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container{
+            border: 2px solid black;
+            height: 80vh;
+            width: 100vw;
+            background-color: rgb(185, 215, 232);
+            display: flex;
+            padding: 22px;
+            margin: 22px;
+            /* transform: rotate(30deg); */
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX
+
+        </div>
+        <div class="box1">BOX1
+
+        </div>
+        <div class="box2">BOX2
+
+        </div>
+    </div>
+</body>
+</html>

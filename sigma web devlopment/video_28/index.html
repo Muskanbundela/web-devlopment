@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position in css</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: azure;
+            text-transform: capitalize;
+
+        }
+
+        .box {
+            border: 2px solid black;
+            width: 30vw;
+            height: 22vh;
+            margin: 4px;
+            padding: 22px;
+        }
+
+        .box1 {
+            background-color: pink;
+            text-align: center;
+            position: sticky;
+            top: 0px;
+            height: 11px;
+            width: 100%;
+            /* position: absolute;
+            top: 11px;
+            left: 11px; */
+
+        }
+
+        .box2 {
+            background-color: skyblue;
+            text-align: center;
+            /* position: relative;
+            top: 35px;
+            left: 36px; */
+
+        }
+
+        .box3 {
+            background-color: gray;
+            text-align: center;
+            /* position:fixed;
+            bottom:0px;
+            left: 8vw;
+            height: 111px; */
+        }
+
+        .box4 {
+            background-color: beige;
+            text-align: center;
+
+        }
+        .parent{
+            /* transform, perspectiveand or filter properties can a;so make an elment appear as positioned */
+            margin: 43px;
+            border: 2px solid yellowgreen;
+            padding: 34px;
+            /* position: absolute; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"> i am box1</div>
+        <div class="box box2">i am box2</div>
+        <div class="box box3">i am box3</div>
+        <div class="box box4">i am box4</div>
+    </div>
+</body>
+
+</html>

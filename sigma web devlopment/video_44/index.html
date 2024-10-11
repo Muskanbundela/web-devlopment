@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise on css grid</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        .logo img {
+            width: 200px;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            /* background-color: aqua; */
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .container-1 {
+            /* margin: 100px; */
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            margin-left:280px;
+            padding: 22px;
+
+
+        }
+
+        .item {
+            background-color: #f9f9f9;
+            /* height: 150px; */
+            max-width: 302px;
+            display: inline-block;
+            margin: 12px;
+            padding: 22px;
+            border-radius: 5px;
+            
+            
+        }
+
+        main {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+        .h3{
+            word-wrap: break-word;
+        }
+
+        main img{
+            position:fixed;
+            right: 300px;
+            top: 100px;
+        }
+        .button-1{
+            width: 300px;
+            height:50px;
+            border-radius: 14px;
+            background-color:skyblue;
+            cursor: pointer;
+            border:2px solid skyblue;
+            font-style: normal;
+            font-weight: 700;
+            text-transform: uppercase;
+
+        }
+        .button-2{
+            background-color: #5cb85c;
+            color: white;
+            font-weight: 700;
+            font-style: normal;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: 2px solid #5cb85c;;
+            height: 40px;
+            cursor: pointer;
+        }
+        .txt{
+            font-size: 8px;
+            word-wrap: break-word;
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="logo.webp" alt="">
+
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Product</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="14" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span> For business</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="14" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>Resources</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="4" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>Support</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="14" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>Our company</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="14" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><img src="im.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <h1>Download UltraEdit for Windows</h1>
+        <img src="Reviews.png" alt="">
+        <h3 class="h3">Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+            editor.</h3>
+            <div>
+            <button class="button-1">Download Mac or Linux version</button>
+        </div>
+            <!-- <div class="mid"><img src="mid.png" alt=""></div> -->
+        <div class="container-1">
+            <div class="item"> <div><h3>English</h3>
+            </div> <button class="button-2"><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*147uzdk*_gcl_au*MTM0MDI5NjA3Ny4xNzI3OTc4MzA1*_ga*MTczMDI2NDg4Mi4xNzI3OTc4MzA1*_ga_QNXHVTPWNS*MTcyODAyNjU0OC40LjEuMTcyODAyNzk5Ni42MC4wLjA.">Download 64-bit</a></button>
+        <div><h3 class="txt">SHA256
+            Copied to clipboard
+            3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</h3></div></div>
+            <div class="item"> <div><h3>English</h3>
+            </div> <button class="button-2"><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*147uzdk*_gcl_au*MTM0MDI5NjA3Ny4xNzI3OTc4MzA1*_ga*MTczMDI2NDg4Mi4xNzI3OTc4MzA1*_ga_QNXHVTPWNS*MTcyODAyNjU0OC40LjEuMTcyODAyNzk5Ni42MC4wLjA.">Download 64-bit</a></button>
+        <div><h3 class="txt">SHA256
+            Copied to clipboard
+            3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</h3></div></div>
+            <div class="item"> <div><h3>English</h3>
+            </div> <button class="button-2"><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*147uzdk*_gcl_au*MTM0MDI5NjA3Ny4xNzI3OTc4MzA1*_ga*MTczMDI2NDg4Mi4xNzI3OTc4MzA1*_ga_QNXHVTPWNS*MTcyODAyNjU0OC40LjEuMTcyODAyNzk5Ni42MC4wLjA.">Download 64-bit</a></button>
+        <div><h3 class="txt">SHA256
+            Copied to clipboard
+            3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</h3></div></div>
+            <div class="item"> <div><h3>English</h3>
+            </div> <button class="button-2"><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*147uzdk*_gcl_au*MTM0MDI5NjA3Ny4xNzI3OTc4MzA1*_ga*MTczMDI2NDg4Mi4xNzI3OTc4MzA1*_ga_QNXHVTPWNS*MTcyODAyNjU0OC40LjEuMTcyODAyNzk5Ni42MC4wLjA.">Download 64-bit</a></button>
+        <div><h3 class="txt">SHA256
+            Copied to clipboard
+            3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</h3></div></div>
+            <div class="item"><div><h3>English</h3>
+            </div> <button class="button-2"><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*147uzdk*_gcl_au*MTM0MDI5NjA3Ny4xNzI3OTc4MzA1*_ga*MTczMDI2NDg4Mi4xNzI3OTc4MzA1*_ga_QNXHVTPWNS*MTcyODAyNjU0OC40LjEuMTcyODAyNzk5Ni42MC4wLjA.">Download 64-bit</a></button>
+        <div><h3 class="txt">SHA256
+            Copied to clipboard
+            3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</h3></div></div>
+            <div class="item"> <div><h3>English</h3>
+            </div> <button class="button-2"><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*147uzdk*_gcl_au*MTM0MDI5NjA3Ny4xNzI3OTc4MzA1*_ga*MTczMDI2NDg4Mi4xNzI3OTc4MzA1*_ga_QNXHVTPWNS*MTcyODAyNjU0OC40LjEuMTcyODAyNzk5Ni42MC4wLjA.">Download 64-bit</a></button>
+        <div><h3 class="txt">SHA256
+            Copied to clipboard
+            3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</h3></div></div>
+            <div class="item"> <div><h3>English</h3>
+            </div> <button class="button-2"><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*147uzdk*_gcl_au*MTM0MDI5NjA3Ny4xNzI3OTc4MzA1*_ga*MTczMDI2NDg4Mi4xNzI3OTc4MzA1*_ga_QNXHVTPWNS*MTcyODAyNjU0OC40LjEuMTcyODAyNzk5Ni42MC4wLjA.">Download 64-bit</a></button>
+        <div><h3 class="txt">SHA256
+            Copied to clipboard
+            3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</h3></div></div>
+            <div class="item"><div><h3>English</h3>
+            </div> <button class="button-2"><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*147uzdk*_gcl_au*MTM0MDI5NjA3Ny4xNzI3OTc4MzA1*_ga*MTczMDI2NDg4Mi4xNzI3OTc4MzA1*_ga_QNXHVTPWNS*MTcyODAyNjU0OC40LjEuMTcyODAyNzk5Ni42MC4wLjA.">Download 64-bit</a></button>
+        <div><h3 class="txt">SHA256
+            Copied to clipboard
+            3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</h3></div></div>
+            <div class="item"> <div><h3>English</h3>
+            </div> <button class="button-2"><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*147uzdk*_gcl_au*MTM0MDI5NjA3Ny4xNzI3OTc4MzA1*_ga*MTczMDI2NDg4Mi4xNzI3OTc4MzA1*_ga_QNXHVTPWNS*MTcyODAyNjU0OC40LjEuMTcyODAyNzk5Ni42MC4wLjA.">Download 64-bit</a></button>
+        <div><h3 class="txt">SHA256
+            Copied to clipboard
+            3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</h3></div></div>
+            <div class="item"><div><h3>English</h3>
+            </div> <button class="button-2"><a href="https://downloads.ultraedit.com/main/ue/win/ue_english_64.exe?_gl=1*147uzdk*_gcl_au*MTM0MDI5NjA3Ny4xNzI3OTc4MzA1*_ga*MTczMDI2NDg4Mi4xNzI3OTc4MzA1*_ga_QNXHVTPWNS*MTcyODAyNjU0OC40LjEuMTcyODAyNzk5Ni42MC4wLjA.">Download 64-bit</a></button>
+        <div><h3 class="txt">SHA256
+            Copied to clipboard
+            3C783C0872319DE70343C2C79D9E0024FDA3F1DB472B8F1119343D42190AAD8C</h3></div> </div>
+        </div>
+    </main>
+</body>
+
+</html>
